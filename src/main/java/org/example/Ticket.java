@@ -29,4 +29,15 @@ public class Ticket {
     public Ticket(String type) {
         this.type = type;
     }
+
+    public Ticket(int id, String type, OffsetDateTime registerTime) {
+        this.id = id;
+        this.type = type;
+        this.registerTime = registerTime;
+    }
+
+    public Ticket(String type, OffsetDateTime registerTime) {
+        this.type = type;
+        this.registerTime = registerTime;
+    }
 }
